@@ -12,10 +12,8 @@ export default function NavBar() {
   const resourcesRef = useRef() as React.MutableRefObject<HTMLButtonElement>
 
   const handleBackgroundChange = useCallback(() => {
-    if ((window.scrollY > 0)) {
+    if (window.scrollY > 0) {
       setNavbarColor(true);
-    } else {
-      setNavbarColor(false);
     }
   }, []);
 
