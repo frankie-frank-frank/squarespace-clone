@@ -23,12 +23,12 @@ export default function Intro() {
         <p className="text-tsl tracking-wider text-white font-semibold subpixel-antialiased">
           you can turn any idea into a reality.
         </p>
-        <button className="bg-white text-black font-bold py-2 mt-4 px-4 h-16 mb-2.5">
+        <button className="bg-white text-black font-bold py-2 mt-4 px-4 h-14 w-40 mb-2.5">
           GET STARTED
         </button>
       </div>
-      <div className="col-span-4">
-        <img src={model} alt='Model' />
+      <div className="col-span-6 -mt-36 overflow-hidden">
+        <img src={model} height={1150} width={1100} alt='Model' />
       </div>
     </div>
   );
