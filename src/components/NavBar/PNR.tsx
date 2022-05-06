@@ -1,9 +1,14 @@
-import React from "react";
+import React, {FC} from "react";
 
-export default function PNR() {
+interface InputProps {
+  productsRef: React.MutableRefObject<HTMLButtonElement>
+  resourcesRef: React.MutableRefObject<HTMLButtonElement>
+}
+
+export const PNR: FC<InputProps> = ({productsRef, resourcesRef}): JSX.Element => {
   return (
     <div className="flex py-2 space-x-4">
-      <button className="text-sm text-white font-bold py-2 px-4 rounded h-10 flex">
+      <button ref={productsRef} className="text-sm text-white font-bold py-2 px-4 rounded h-10 flex group-hover:text-white">
         PRODUCTS{" "}
         <span>
           <svg
@@ -25,7 +30,7 @@ export default function PNR() {
       <button className="text-sm text-white font-bold py-2 px-4 rounded h-10">
         TEMPLATE
       </button>
-      <button className="text-sm text-white font-bold py-2 px-4 rounded h-10 flex">
+      <button ref={resourcesRef} className="text-sm text-white font-bold py-2 px-4 rounded h-10 flex">
         RESOURCES{" "}
         <span>
           <svg
@@ -47,3 +52,5 @@ export default function PNR() {
     </div>
   );
 }
+
+export default PNR;

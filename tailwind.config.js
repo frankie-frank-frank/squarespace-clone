@@ -10,6 +10,9 @@ module.exports = {
     extend: {
       colors: {
         'squarespace':'#592a2a'
+      },
+      height: {
+        '56': '56%'
       }
     },
   },

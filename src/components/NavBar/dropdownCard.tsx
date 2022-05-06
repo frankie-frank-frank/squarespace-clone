@@ -19,7 +19,7 @@ export const DropdownCard: FC<InputFromNavHoverProps> = ({
   content,
 }): JSX.Element => {
   return (
-    <div key={content.id}>
+    <div className='' key={content.id}>
       <h3>{content.header}</h3>
       {content.cardArray.map((item) => {
         return <p>{item.name}</p>;

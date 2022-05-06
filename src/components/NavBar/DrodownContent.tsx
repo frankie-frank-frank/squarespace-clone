@@ -27,6 +27,38 @@ export const ProductsContent = [
       {name: 'Extensions', status: "None"},
       {name: 'Restaurants & Hospitality', status: "New"}
     ]
+  },
+  {
+    id: 3,
+    header: "BUILD YOUR BRAND",
+    cardArray: [
+      {name: 'Overview', status: "None"},
+      {name: 'Email Marketing', status: "None"},
+      {name: 'SEO Tools', status: "None"},
+      {name: 'Social Media Tools', status: "None"},
+      {name: 'Video Maker', status: "New"}
+    ]
+  },
+  {
+    id: 4,
+    header: "GET A DOMAIN",
+    cardArray: [
+      {name: 'Find a Domain', status: "None"},
+      {name: 'Transfer a Domain', status: "None"}
+    ]
   }
 ];
 
+export const ResourcesContent = [
+  {
+    id: 1,
+    header: "BUILD YOUR BRAND",
+    cardArray: [
+      {name: 'Overview', status: "None"},
+      {name: 'Email Marketing', status: "None"},
+      {name: 'SEO Tools', status: "None"},
+      {name: 'Social Media Tools', status: "None"},
+      {name: 'Video Maker', status: "New"}
+    ]
+  }
+]
